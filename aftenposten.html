@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html><head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css" integrity="sha384-aUGj/X2zp5rLCbBxumKTCw2Z50WgIr1vs/PFN4praOTvYXWlVyh2UtNUU0KAUhAX" crossorigin="anonymous">
+<style>
+#article1 {background-color: white; color: black;}
+#article2 {background-color: #dff0d8; color: black;}
+#article3 {background-color: #fcf8e3; color: black;}
+#article4 {background-color: #f2dede; color: black;}
+.mytooltip {
+  font-size:18px;
+  //color:#fff; 
+  //bottom: 10px;
+  //color:#fff;
+  //background-color:#000;
+  border: 4px solid black;
+}
+.cheat {color: #e91845;}
+</style>
+<script>
+$(function() {
+  $(".cheat").hover(
+     function() {
+	$(this).css('color', '#3399ff').css('font-weight', 'bold');
+        console.log("in");
+     }, function() {
+	$(this).css('color', '#e91845').css('font-weight', 'normal');
+     }
+  );
+ $( document ).tooltip({
+   tooltipClass: "mytooltip",
+   items: "[title]",
+   content: function() {
+     var element = $( this );
+     /*
+     if ( element.is( "[data-geo]" ) ) {
+       var text = element.text();
+       return "<img class='map' alt='" + text +
+       "' src='http://maps.google.com/maps/api/staticmap?" +
+       "zoom=11&size=350x350&maptype=terrain&sensor=false&center=" +
+       text + "'>";
+     }
+     */
+     if ( element.is( "[title]" ) ) {
+       //return element.attr( "title" );
+       var text = $('a[name^="'+element.attr( "title" )+'"]').text();
+       if (element.hasClass('cheata')) {
+          return '<strong>Corresponding sentence in SAIH.no (click to go there)</strong> : <div>' + text + '</div>';
+       } else {
+          return '<strong>Corresponding sentence in Aftenposten article (click to go there)</strong> : <div>' + text + '</div>';
+       }
+     }
+     /*
+     if ( element.is( "img" ) ) {
+       return '<strong>Corresponding sentence : ' + element.attr( "alt" ) + '</strong>';
+     }
+     */
+   }
+ });
+})
+</script>
+</head>
+<body>
+
+<span id="article1">
+<div class="panel panel-default">
+  <div class="panel-heading">
+      <h3 class="panel-title"><strong>Aftenposten article</strong></h3>
+      Title : Vest-Sahara: 40 &aring;r med undertrykkelse og utbytting <br/>
+      Author : Hilde Harbo <br/>
+      Source : http://www.aftenposten.no/fakta/innsikt/Vest-Sahara-40-ar-med-undertrykkelse-og-utbytting-8230225.html
+        </div>
+	  <div class="panel-body">
+
+        <p itemprop="description" class="article-description">Kolonitiden er ikke over. Bak minelagte murer i Vest-Sahara og i tr&oslash;stesl&oslash;se flyktningleirer i &oslash;rkenen i Algerie, lever saharawiene.</p>
+
+
+        <div class="article-content">
+          <div itemprop="articleBody" class="article-body">
+
+           
+<aside class="factbox collapsible"><h1 class="factbox-title section-color-primary icon-factbox-toggle">Fakta: Vest-Sahara</h1><div class="factbox-body clearfix"><div><p class="section-color-border-primary"><a class="cheat cheata" name="cheat020a" href="#cheat020b" title="cheat020b">Tidligere spansk koloni, okkupert av Marokko siden 1975</a>.</p><p class="section-color-border-primary">Krig mellom frigj&oslash;ringsbevegelsen Polisario og Marokko fra 1975 til 1991.</p><p class="section-color-border-primary"><a class="cheat cheata" name="cheat021a" href="#cheat021b" title="cheat021b">V&aring;penhvile fra 1991 og avtale om at det skulle holdes folkeavstemning om selvstendighet.</p><p class="section-color-border-primary">Marokko har ikke overholdt avtalen om folkeavstemning</a>.</p><p class="section-color-border-primary"><a class="cheat cheata" name="cheat022a" href="#cheat022b" title="cheat022b">FN- styrken MINURSO har ikke mandat til &aring; rapportere om omfattende menneskerettighetsbrudd</a>.</p><p class="section-color-border-primary">Landet er delt av en vel 2000 kilometer lang minelagt mur.</p><p class="section-color-border-primary"><a  class="cheat cheata" name="cheat023a" href="#cheat023b" title="cheat023b">Vel halvparten av Vest- Saharas befolkning, saharawiene, bor i flyktningleirer</a>.</p></div><button class="factbox-close icon-factbox-toggle section-color-primary"></button></div></aside>
+
+            <p>Saharawiene er langt p&aring; vei blitt glemt og oppgitt av verdenssamfunnet. <a class="cheat cheata" name="cheat001a" href="#cheat001b" title="cheat001b">100 FN- resolusjoner og en dom i den internasjonale domstolen i Haag har ikke f&oslash;rt til at Vest- Sahara har g&aring;tt fra &aring; v&aelig;re marokkansk koloni til &aring; bli et selvstendig land</a>. <a class="cheat cheata" name="cheat014a" href="#cheat014b" title="cheat014b">Engasjementet fra utenlandske partier og organisasjoner, ogs&aring; i Norge, har heller ikke gitt konkrete resultater</a>.</p><p><a class="cheat cheata" name="cheat002a" href="#cheat002b" title="cheat002b">Mens Marokko bryter saharawienes menneskerettigheter, har landet ved hjelp av sin mektige allierte Frankrike klart &aring; forhindre at disse bruddene blir registrert og rapportert gjennom FN.</a></p><p><a class="cheat cheata" name="cheat003a" href="#cheat003b" title="cheat003b">For &aring; finne opphavet til saharawienes h&aring;pl&oslash;se situasjon, m&aring; vi tilbake til 1975, da Spania oppga kolonien som den gang het Spansk Sahara. Samtidig som de trakk seg ut, forhindret ikke spanjolene eller resten av verdenssamfunnet at Marokko rykket inn og okkuperte Vest- Sahara</a>. <a class="cheat cheata" name="cheat010a" href="#cheat010b" title="cheat010b">Store deler av landets innbyggere m&aring;tte flykte under bomberegn og slo seg ned i leirer i en del av Algerie som regnes som ubeboelig</a>.</p><p><a class="cheat cheata" name="cheat011a" href="#cheat011b" title="cheat011b">Saharawienes frigj&oslash;ringsbevegelse Polisario f&oslash;rte v&aelig;pnet kamp mot inntrengerne</a> og inngikk i 1991 en v&aring;penhvileavtale med Marokko. <a class="cheat cheata" name="cheat004a" href="#cheat004b" title="cheat004b">If&oslash;lge avtalen skulle det gjennomf&oslash;res en folkeavstemning i Vest- Sahara &aring;ret etter, om hvorvidt landet skulle bli selvstendig eller innlemmes i Marokko</a>.</p><h2>Folkeavstemning sabotert</h2><p><a class="cheat cheata" name="cheat005a" href="#cheat005b" title="cheat005b">FN- styrken MINURSO ble opprettet for &aring; overv&aring;ke v&aring;penhvilen og sikre gjennomf&oslash;ring av folkeavstemningen. Marokko saboterte imidlertid denne delen av avtalen, og folkeavstemningen er aldri blitt gjennomf&oslash;rt</a>.</p><p><a class="cheat cheata" name="cheat012a" href="#cheat012b" title="cheat012b">Derimot reiste okkupasjonsmyndighetene en over 2000 kilometer lang minelagt mur gjennom landet. Denne hindrer kontakt mellom saharawiene som fortsatt bor i flyktningleirer og omr&aring;dene helt &oslash;st og s&oslash;r i landet, som er kontrollert av Polisario</a>.</p>
+            
+
+            <p>Forholdene for de 165.000 saharawiske flyktningene som bor i Algerie, er elendige. Omr&aring;det i &oslash;rkenen er s&aring; ugjestmildt at det aldri tidligere har v&aelig;rt bebodd. <a class="cheat cheata" name="cheat013a" href="#cheat013b" title="cheat013b">Flyktningene er fullstendig avhengige av humanit&aelig;r hjelp utenfra, men bistanden er redusert de siste &aring;rene og er ikke tilstrekkelig til &aring; dekke deres grunnleggende behov. En stor del av befolkningen lider av feil- eller underern&aelig;ring</a>. Mange har bodd i leirene helt siden 1975/76, eller hele sitt liv. Arbeidsledigheten er p&aring; 90 prosent.</p><h2>Tortur, drap og forsvinninger</h2><p><a class="cheat cheata" name="cheat006a" href="#cheat006b" title="cheat006b">Marokko ut&oslash;ver systematiske brudd p&aring; menneskerettighetene i Vest- Sahara. Saharawiene blir torturert, trakassert, voldtatt og drept. De mangler politiske rettigheter, og mange er forsvunnet eller utsatt for vilk&aring;rlige fengslinger. <a class="cheat cheata" name="cheat007a" href="#cheat007b" title="cheat007b">Samtidig er MINURSO den eneste FN- styrken som er opprettet siden 1970- tallet som ikke har mandat til &aring; rapportere slike brudd</a>.</p><p>Presse- og ytringsfriheten er sterkt begrenset</a>, det samme er uavhengige observat&oslash;rers og utenlandske journalisters mulighet til &aring; rapportere fra landet.</p><p>Okkupanten har oppmuntret til betydelig marokkansk bosetting i Vest- Sahara, som har store naturressurser i form av fosfat, fisk og trolig olje og gass. Koloniseringen har medf&oslash;rt at saharawiene n&aring; er i mindretall i sitt eget land, noe som har gjort kravet om folkeavstemning enda vanskeligere.</p><h2>&Oslash;konomisk utbytting</h2><div class="media-wrapper image-wrapper portrait pos-left-small"><div class="media-info image-info"><div class="caption">
+    <a class="cheat cheata" name="cheat008a" href="#cheat008b" title="cheat008b">Vest-Sahara er rikt p&aring; naturressurser som fisk og fosfat, trolig ogs&aring; olje og gass, men landets opprinnelige befolkning</a> f&aring;r en sv&aelig;rt liten andel av inntektene.
+   </div><div class="photographer icon-camera">
+   </div></div></div><p>Marokkanske myndigheter kontrollerer den &oslash;konomiske aktiviteten i Vest- Sahara, og sv&aelig;rt lite av inntektene g&aring;r til den saharawiske befolkningen. Okkupasjonsmakten gir skattelettelser og subsidier til egne innbyggere som sl&aring;r seg ned i Vest- Sahara for &aring; utnytte landets rikdommer.</p><p>Mange utenlandske selskaper har ogs&aring; deltatt i denne utbyttingen. De siste &aring;rene er det imidlertid blitt en &oslash;kende bevissthet rundt det etisk forkastelige i &aring; investere i okkuperte omr&aring;der. <a class="cheat cheata" name="cheat009a" href="#cheat009b" title="cheat009b">Vest- Sahara er det eneste landet i verden der Norges regjering frar&aring;der norske selskaper &aring; drive virksomhet</a>. Det norske Oljefondet har trukket seg ut av flere selskaper som opererer der, men har f&aring;tt kritikk for &aring; ha eierandeler i Kosmos Energy, som driver leteboring etter olje og gass utenfor kysten av Vest- Sahara.</p><p>Frigj&oslash;ringsbevegelsen Polisario erkl&aelig;rte Vest- Sahara som Den saharawiske arabiske demokratiske republikk (SADR) umiddelbart etter at Spania trakk seg ut. SADR har en regjering i eksil og er anerkjent av Den afrikanske union og vel 70 land, men ikke av innflytelsesrike stater som for eksempel USA. Mens FN spilte en sentral rolle da 80 andre kolonier fikk sin selvstendighet, har organisasjonen oppn&aring;dd lite for Vest- Sahara. Landet kalles av FN for et ikke- selvstyrt omr&aring;de.</p><h2>Norsk engasjement</h2><p>Selv om Norge ikke anerkjenner SADR, har norske myndigheter heller ikke anerkjent Marokkos suverenitet over Vest- Sahara. Det er bred politisk enighet om at den saharawiske befolkningen m&aring; f&aring; delta i en folkeavstemning om sitt lands fremtid og at Marokko ikke har et rettmessig krav p&aring; Vest- Sahara. Flere norske partier og organisasjoner har ogs&aring; vedtatt at Norge b&oslash;r anerkjenne SADR. <a class="cheat cheata" name="cheat015a" href="#cheat015b" title="cheat015b">Utenriksminister B&oslash;rge Brende (H) har i en rekke m&oslash;ter tatt opp situasjonen i Vest- Sahara med representanter for franske og marokkanske myndigheter</a>.</p><p>Det finnes en aktiv norsk st&oslash;ttekomitÃ© for Vest- Sahara, og SAIH (Studentenes og Akademikernes Internasjonale Hjelpefond) har i &aring;r en kampanje for &aring; markere 40 &aring;r med marokkansk okkupasjon.</p><subheadline3></subheadline3>
+
+          </div>
+  </DIV></DIV>
+</span>
+
+
+
+
+<span id="article2">
+<div class="panel panel-default">
+  <div class="panel-heading">
+      <h3 class="panel-title"><strong>SAIH 2015 campaign document</strong></h3>
+      Title :  BAKGRUNN: VEST-SAHARA <br/>
+      Author : Unknown (probably Inga Marie Nymo Riseth)  <br/>
+      Source : https://saih.no/bli-med/kampanje/2015/bakgrun
+        </div>
+	  <div class="panel-body">
+
+		<article>
+		<div class="wrapper">
+			<div class="grid">
+				<div class="grid__item one-whole">
+
+					<h1>Bakgrunn: Vest-Sahara</h1>
+
+											<div class="hero">
+							<p>I 2015 er det 40 &aring;r siden Marokkos okkupasjon av Vest-Sahara startet. Les mer om bakgrunnen for hvorfor SAIH retter s&oslash;kelyset p&aring; denne okkupasjonen i &aring;rets politiske kampanje.</p>
+						</div>
+					
+				</div>
+			</div>
+
+						
+			<div class="grid">
+				<div class="article__main" style="vertical-align:top;">
+					<div class="article__text">
+
+																			
+        
+            <p><b>Visste du at...</b><br></p><ul><li><a  class="cheat cheatb" name="cheat020b" href="#cheat020a" title="cheat020a">Vest-Sahara har v&aelig;rt okkupert av Marokko siden 1975. F&oslash;r dette var omr&aring;det spansk koloni</a>.</li><li><a  class="cheat cheatb" name="cheat021b" href="#cheat021a" title="cheat021a">I 1991 forhandlet FN frem v&aring;penhvile. Partene ble enige om folkeavstemning om omr&aring;dets fremtidige status, og en egen FN-operasjon (MINURSO) ble opprettet. Folkeavstemningen har aldri blitt gjennomf&oslash;rt</a>.</li><li><a  class="cheat cheatb" name="cheat023b" href="#cheat023a" title="cheat023a">Om lag halvparten av det saharawiske folk bor i flyktningleirer i Algerie</a>.</li><li>Marokko kontrollerer all &oslash;konomisk aktivitet i Vest-Sahara i tillegg til landets rike naturressurser.</li><li>FN, Den afrikanske union og Haag-domstolen st&oslash;tter saharawienes rett til selvbestemmelse.</li><li><a  class="cheat cheatb" name="cheat022b" href="#cheat022a" title="cheat022a">FN-operasjonen MINURSO har ikke mandat til &aring; rapportere p&aring; menneskerettighetsbrudd som skjer i Vest-Sahara</a>.</li><li><a href="http://saih.no/bli-med/kampanje/2015/rapport">SAIHs nye rapport</a> viser at 256 menneskerettighetsovergrep har blitt rapportert i Vest-Sahara fra 1.April 2014 t.o.m 1.mars 2015. Dette inkluderer 283 navngitte ofte. De ulike menneskerettighetsbruddene er kategorisert i 21 kategorier og varierer fra tortur og seksuell vold, til brudd p&aring; rett til utdanning.</li></ul>
+
+        
+            <p><a class="cheat cheatb" name="cheat003b" href="#cheat003a" title="cheat003a">F&oslash;r spanske kolonimakter hadde trukket seg ut av Vest-Sahara, rykket marokkanske styrker inn i landet h&oslash;sten 1975</a>. I 1991 inngikk Marokko og den saharawiske frigj&oslash;ringsbevegelsen Polisario en v&aring;penhvileavtale. <a class="cheat cheatb" name="cheat004b" href="#cheat004a" title="cheat004a">Avtalen innebar at det skulle gjennomf&oslash;res en folkeavstemning i Vest-Sahara i 1992 om landet skulle bli selvstendig eller bli en del av Marokko</a>. <a class="cheat cheatb" name="cheat005b" href="#cheat005a" title="cheat005a">For &aring; overv&aring;ke v&aring;penhvilen og sikre gjennomf&oslash;ringen av folkeavstemningen ble FN-operasjonen MINURSO opprettet. Den dag i dag har enn&aring; ikke avstemningen blitt avholdt</a>. <a class="cheat cheatb" name="cheat007b" href="#cheat007a" title="cheat007a">MINURSO er FNs eneste operasjon uten mandat til &aring; rapportere om menneskerettighetsbrudd</a>.</p><p><a class="cheat cheatb" name="cheat008b" href="#cheat008a" title="cheat008a">Vest-Sahara er meget rikt p&aring; naturressurser, som fisk, olje, gass og fosfat. All &oslash;konomisk aktivitet kontrolleres av Marokko, og omtrent ingenting kommer det saharawiske folk til gode</a>. <a class="cheat cheatb" name="cheat006b" href="#cheat006a" title="cheat006a">I de okkuperte omr&aring;dene er menneskerettighetssituasjonen meget alvorlig, med sterkt begrenset ytringsfrihet, vilk&aring;rlige fengslinger og forsvinninger</a>. Mesteparten av det saharawiske folket bor i flyktningeleirer ved byen Tindouf i Algerie. Her er ressursmangelen stor og folk er fullstendig avhengig av humanit&aelig;r hjelp for &aring; overleve.</p>
+
+        
+            <p><a class="cheat cheatb" name="cheat001b" href="#cheat001a" title="cheat001a" href="#cheat001a" title="cheat001a">FN behandler Vest-Sahara som Afrikas siste koloni og over 100 FN-resolusjoner krever at saharawienes rett til selvbestemmelse m&aring; innfris</a>. Likevel forblir situasjonen fastl&aring;st. <a class="cheat cheatb" name="cheat002b" href="#cheat002a" title="cheat002a">En utvidelse av MINURSO til &aring; inkludere menneskerettigheter i sitt mandat er avgj&oslash;rende for &aring; forbedre situasjonen i Vest-Sahara. Men hvert &aring;r n&aring;r mandatet er oppe til behandling i Sikkerhetsr&aring;det bruker Frankrike, som har n&aelig;re relasjoner til Marokko, sin posisjon til &aring; stoppe en slik inkludering</a>.</p><p>Regjeringen prioriterer menneskerettigheter i sitt utviklingsbudsjett for 2015, og dette gj&oslash;r Vest-Sahara meget relevant. Vest-Sahara er ogs&aring; det eneste landet i verden hvor Norge frar&aring;der norske bedrifter &aring; drive virksomhet. Likevel finnes det flere eksempler p&aring; samarbeid mellom h&oslash;yere utdanningsinstitusjoner i Norge og selskaper som driver virksomhet i okkuperte Vest-Sahara.</p><p>Dette samarbeidet skjer gjennom for eksempel karrieredager og stipendordninger for studenter, og er med p&aring; &aring; legitimere okkupasjonen. Flere av SAIHs lokallag har tidligere jobbet for &aring; f&aring; p&aring; plass etiske retningslinjer ved h&oslash;yere utdanningsinstitusjoner i Norge, flere har klart det, og dette arbeidet f&oslash;lger vi opp i &aring;rets kampanje.</p>
+
+																			<div class="sharebuttons">
+<a href="http://twitter.com/share?url=//saih.no/bli-med/kampanje/2015/bakgrun&text=" class="grid__item one-twelfth palm-one-quarter js-popup"><div class="media"><div class="social tw media__img"></div></div></a><a href="http://www.facebook.com/sharer/sharer.php?u=//saih.no/bli-med/kampanje/2015/bakgrun" target="_blank" class="grid__item one-twelfth palm-one-quarter js-popup"><div class="media"><div class="social fb media__img"></div></div></a></div>
+
+						
+					</div>
+				</div>
+
+							</div>
+
+
+
+						
+			
+			
+			
+						
+		</div> 
+				
+	</article>
+  </DIV></DIV>
+</span>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<span id="article3">
+<div class="panel panel-default">
+  <div class="panel-heading">
+      <h3 class="panel-title"><strong>SAIH 2002 campaign document</strong></h3>
+      Title : 2002: VEST-SAHARA - AFRIKAS SISTE KOLONI <br/>
+      Author : Unknown (probably Inga Marie Nymo Riseth)  <br/>
+      Source : https://saih.no/bli-med/kampanje/2002-vest-sahara-afrikas-siste-koloni
+        </div>
+	  <div class="panel-body">
+
+		<article>
+		<div class="wrapper">
+			<div class="grid">
+				<div class="grid__item one-whole">
+
+					<h1> 2002: VEST-SAHARA - AFRIKAS SISTE KOLONI</h1>
+
+											<div class="hero">
+							<p>Internasjonal rett er krystallklar: Vest-Saharas befolkning skal selv f&aring; avgj&oslash;re sitt lands fremtidige status. Uheldigvis vil okkupasjonsmakten Marokko noe annet. I 2002 hadde 165.000 flyktninger ventet i 27 &aring;r i Algeries &oslash;rken, under de hardeste levek&aring;r p&aring; jorden. </p>
+						</div>
+					
+				</div>
+			</div>
+
+						
+			<div class="grid">
+				<div class="article__main" style="vertical-align:top;">
+					<div class="article__text">
+
+																			
+        
+            <p><strong>SAIHs kampanje i 2002 satte fokus p&aring; Vest-Sahara. Her er litt bakgrunnsinformasjon som ble skrevet til kampanjen den gang:</strong></p><p><strong>Retten til folkeavstemning<br></strong>Helt fra 1960 har FN sl&aring;tt fast at Vest-Saharas framtid skal avgj&oslash;res gjennom en folkeavstemning. Vest-Sahara var p&aring; denne tiden en spansk koloni. I 1973 innledet saharawiene, det vest-sahariske folk, milit&aelig;r motstand mot kolonimakten. Spania inns&aring; raskt at de var i ferd med &aring; miste sin tynt befolkede koloni, og innledet avkolonialiseringsprosessen ved &aring; avholde en folketelling i landet. Folketellingen viste at befolkningen talte 73.479 saharawier. <br><br>P&aring; 70-tallet begynte Marokko og Mauritania for f&oslash;rste gang offentlig &aring; gj&oslash;re krav p&aring; territoriet. FNs internasjonale domstol avviste imidlertid kravet i oktober 1975. Til tross for dette, rykket Marokko og Mauritania inn i Vest-Sahara to uker senere. <a class="cheat cheatb" name="cheat010b" href="#cheat010a" title="cheat010a">Da landets st&oslash;rste byer ble bombet med napalm og klasebomber</a>, flyktet flertallet av befolkningen til den algierske grensen. <a class="cheat cheatb" name="cheat011b" href="#cheat011a" title="cheat011a">Fra leirene i Algerie ble en republikk utropt, og saharawiene f&oslash;rte sin motstandskamp herfra, gjennom motstandsbevegelsen Frente Polisario</a>. Den effektive vest-sahariske geriljakrigen mot Mauritania f&oslash;rte til en fredsavtale mellom de to i 1979. Krigen mellom Marokko og Vest-Sahara varte derimot fram til 1991, da FN meglet fram en v&aring;penhvileavtale. Avtalen innebar at saharawiene endelig skulle f&aring; avholde folkeavstemningen som de hadde blitt lovet i over 30 &aring;r. Avstemningen var planlagt &aring; avholdes p&aring; h&oslash;sten 1992, og skulle forberedes av FN. Marokko har imidlertid hindret og trenert FNs arbeid helt siden. De siste &aring;rene har den marokkanske kongen prinsipielt avsl&aring;tt ideen om folkeavstemning.</p><p>I dag har 80 stater anerkjent Den Saharawiske Arabiske Demokratiske Republikk, og staten er et fullverdig medlem av den Afrikanske Union (AU). Vest-Saharas president ble i fjor valgt til visepresident av unionen. Afrikas aksept av Vest-Sahara er hovedgrunnen til at Marokko er det eneste afrikanske land som ikke er medlem av AU.</p><p><strong>Brudd p&aring; menneskerettighetene<br></strong>Siden 1976 har 165.000 saharawier bodd i flyktningleirene i Algerie. I prosentandel i forhold til den totale befolkningen, er de vest-sahariske flyktningeleirene de st&oslash;rste i verden. Bare 50.000 saharawier bor fremdeles inne p&aring; okkupert omr&aring;de. <a class="cheat cheatb" name="cheat012b" href="#cheat012a" title="cheat012a">De to delene av befolkningen har knapt noe kontakt, da de er fysisk atskilt fra hverandre, av en 2.000 kilometer lang mur. Den er 2 meter h&oslash;y, bevoktet av 200.000 marokkanske soldater, et av verdens st&oslash;rste minefelt</a> og utstyrt med h&oslash;yteknologisk radaroverv&aring;kning. Telefonforbindelsene til okkupert omr&aring;de avlyttes, og post &aring;pnes. Saharawier p&aring; okkupert omr&aring;de unng&aring;r &aring; komme i kontakt med utlendinger, av frykt for forf&oslash;lgelse fra marokkansk politi.</p><p>Over 1% av den saharawiske befolkning er pr. i dag forsvunnet. En av de viktigste forkjemperne for frigivelse av forsvunne, er den tidligere samvittighetsfangen Sidi Mohammed Daddach. Daddach, som ble l&oslash;slatt i november 2001, hadde sittet 24 &aring;r i marokkanske fengsler, hvorav 14 &aring;r p&aring; d&oslash;dscelle, og 2 &aring;r i celle uten lys. I november 2002 mottok han Raftoprisen i Bergen for sitt arbeid. Daddach m&oslash;tte i Norge sin mor for f&oslash;rste gang p&aring; 27 &aring;r, som til vanlig bor i flyktningeleirene i Algerie. Daddach har blitt et symbol p&aring; motstanden og den fredelige kampen for en rettferdig folkeavstemning.</p><p>Marokko har alltid hevdet &aring; ikke holde "forsvunne" saharawier. I 1991 frigjorde imidlertid Marokko omtrent 300 saharawier som de alltid har nektet &aring; ha hatt i sin varetekt. Disse har i etterkant f&aring;tt forbud mot &aring; forlate sitt hjemsted, og mot &aring; snakke med utlendinger. Det foreg&aring;r en utstrakt bruk av tortur mot saharawier. Det er med denne bakgrunn at det for &oslash;yeblikket p&aring;g&aring;r en internasjonal kampanje for &aring; f&aring; Marokko til &aring; frigi ytterligere savnede personer. Overgrepene fra den marokkanske stat, rammer ogs&aring; marokkanere: i fjor ble det rapportert om 7 forsvunne marokkanere. Vest-Sahara, p&aring; sin side, holder fremdeles 1260 marokkanske krigsfanger, tatt i kamper fram til v&aring;penhvilen tr&aring;dte i kraft i 1991.</p><p><strong>Marokkos sterke allierte<br></strong>Etter at FN meglet fram avtalen i 1991, har de vist liten styrke i &aring; gjennomf&oslash;re folkeavstemningen. Marokko har gode allierte b&aring;de i FNs sikkerhetsr&aring;d og i EU. Det st&oslash;rste hinderet for fremgang har alltid v&aelig;rt Frankrike, Marokkos gamle allierte. Frankrike har lange historiske b&aring;nd til Marokko, og det foreg&aring;r utstrakt handel mellom de to landene. Frankrike eksporterer v&aring;pen til Marokko. Ledende personer i fransk politikk, n&aelig;ringsliv og presse har endog vokst opp eller studert i Marokko. President Chirac kaller omr&aring;det provoserende nok for "Marokkos s&oslash;rlige provinser".<br>Ogs&aring; USA er alliert av Marokko. USA har milit&aelig;rbaser i landet, som er et av de f&aring; "vestligorienterte" araberstatene. Lenge var Marokko en viktig megler i dialogen mellom Israel og Palestina. Denne funksjonen spiller ikke lenger Marokko.</p><p>I november 2001 inngikk det franske oljeselskapet TotalFinaElf og det amerikanske oljeselskapet Kerr McGee kontrakter med Marokko, som gav selskapene tillatelse til &aring; lete etter olje utenfor kysten av okkupert Vest-Sahara. I etterkant har FN sl&aring;tt fast at all oljeutvinning vil v&aelig;re i strid med internasjonal lov. Til tross for dette, inngikk det norske seismikkselskapet TGS-NOPEC i mai 2002 kontrakter med de to oljeselskapene og Marokko i &aring; kartlegge havbunnen utenfor Vest-Saharas kyst. Det norske selskapet fikk stor kritikk fra presse, norske organisasjoner, selskapets aksjon&aelig;rer og utenriksminister Jan Petersen for denne innblandingen. Front Polisario har uttrykt at de vil anse en fremtidig oljeutvinning som brudd p&aring; v&aring;penhvilen.</p><p>Marokko har gjennom hele okkupasjonen utvunnet og eksportert Vest-Saharas naturressurser, til tross for at Marokko if&oslash;lge FN ikke er administrativ makt over omr&aring;det. Vest-Sahara har blant de st&oslash;rste fosfat- og fiskeforekomstene i verden. Siden 1988 har 800.000 tonn fin sand blitt eksportert til Kanari&oslash;yene. Okkupasjonen koster Marokko 3 millioner dollar dagen, og utgj&oslash;r 20 prosent av et allerede gjeldstynget statsbudsjett. Det er innblanding fra internasjonalt n&aelig;ringsliv p&aring; okkupert territorium, som gj&oslash;r en slik okkupasjon mulig.</p><p><strong>Den farlige utviklingen: FN vakler<br></strong>FN har de siste &aring;rene gjort et slett arbeid. FNs spesialutsending til Vest-Sahara, James Baker, er tidligere amerikansk utenriksminister, og har de siste &aring;rene kommet med en rekke sv&aelig;rt Marokko-vennlige utspill. </p><p>I juli i fjor foreslo Baker for FNs Sikkerhetsr&aring;d at ALLE mennesker bosatt i Vest-Sahara skulle ha stemmerett i en fremtidig folkeavstemning. Flertallet av innbyggerne i Vest-Sahara er imidlertid i dag marokkanere, etter at Marokko har flyttet flere hundre tusen mennesker inn i omr&aring;det, i brudd med avtalen fra 1991, og til tross for Polisarios protester. I praksis betydde Bakers anbefaling til Sikkerhetsr&aring;det at man dermed skulle se bort fra alle tidligere resolusjoner og avtaler, som hittil har sl&aring;tt fast at det var saharawiene som skulle f&aring; stemme. Baker har i etterkant erkjent at det kontroversielle forslaget var utarbeidet av Marokko, som for &oslash;vrig var den eneste parten i konflikten som ikke ford&oslash;mte det. B&aring;de Frankrike, USA og Storbritannia arbeidet for at dette forslaget skulle vedtaes. Imidlertid m&oslash;tte forslaget stor motstand fra de andre landene i Sikkerhetsr&aring;det, og ble til slutt avvist. Baker fikk en ny mulighet til &aring; komme opp med et bedre forslag.<br> <br>I midten av januar 2003 kom Baker med et nytt forslag. Dette inneb&aelig;rer at det er de som har bodd i territoriet i inntil 25 &aring;r, som skal f&aring; avgj&oslash;re landets fremtidige status. Ettersom det er 27 &aring;r siden Marokko okkuperte omr&aring;det, er fremdeles Marokko sikret flertall. Partene ble gitt to m&aring;neder p&aring; &aring; komme med uttalelser til forslaget. Det er ventet at Marokko vil godta det, og Polisario avsl&aring; det.</p><p>Det har aldri blitt lagt internasjonalt press p&aring; Marokko. De siste &aring;rene har Spania og Marokko f&aring;tt et stadig d&aring;rligere forhold, og deler av &aring;rsaken er uenighet om Vest-Sahara. Konflikten mellom de to landene skyldes ogs&aring; konflikter om olje- og fiskeressurser, samt om narkotika- og menneskesmugling. Vest-Saharas st&oslash;rste allierte er likevel Algerie, som lenge har hatt et problematisk forhold til Marokko. Bortsett fra Spania og Algerie, har det saharawiske folk f&aring; internasjonale st&oslash;ttespillere. Deres sterkeste kort er internasjonal rett, som klart sl&aring;r fast at de har krav p&aring; en folkeavstemning. <a class="cheat cheatb" name="cheat013b" href="#cheat013a" title="cheat013a">Mens de venter p&aring; at det internasjonale samfunn gjennom FN skal arrangere dette, lider befolkningen i flyktningeleirene av feilern&aelig;ring, da mindre og mindre matvarebistand gis for hvert &aring;r</a>. Det er sannsynligvis grenser for hvor lenge befolkningen i flykningeleirene kan vente uten &aring; ta til v&aring;pen.</p><p><strong>Norsk politikk<br></strong>Norsk politikk har alltid v&aelig;rt &aring; st&oslash;tte Sikkerhetsr&aring;det i dets arbeid. SAIH mener at dette ikke er tilstrekkelig. N&aring;r de tre sterkeste medlemmene av Sikkerhetsr&aring;det tar stadig klarere side med okkupasjonsmakten i denne saken, er det bare et tidssp&oslash;rsm&aring;l f&oslash;r Sikkerhetsr&aring;det faller ned p&aring; en Marokko-vennlig resolusjon. Norge m&aring; legge press p&aring; Marokko, og kreve at de g&aring;r med p&aring; &aring; gjennomf&oslash;re folkeavstemning slik den var avtalt mellom de to partene i 1991. Norge m&aring; videre kreve fra Frankrike og USA at oljeutvinning ikke skal finne sted, at v&aring;penhandelen skal stoppe og at den politiske st&oslash;tten til okkupasjonen skal opph&oslash;re. I l&oslash;pet av Norges 2 &aring;r i Sikkerhetsr&aring;det stemte Norge overraskende nok imot USA i Vest-Sahara-sp&oslash;rsm&aring;let, og krevde at internasjonal rett skal f&oslash;lges, snarere enn &aring; st&oslash;tte okkupasjonsmakten. I november 2002 hadde videre utenriksminister Jan Petersen gledelig nok et sv&aelig;rt kritisk utspill overfor norsk n&aelig;ringslivsinnblanding i okkupert omr&aring;de. Norsk utenrikstjeneste gjorde dessuten en imponerende jobb for &aring; f&aring; Raftoprisvinner Daddach til landet. Disse initiativene er velkomne, men ikke tilstrekkelige. Offisiell norsk politikk best&aring;r i &aring; "finne en l&oslash;sning som begge parter kan akseptere". Det er p&aring; tide det vises en klarere linje, og stilles st&oslash;rre krav, overfor okkupasjonsmakten Marokko og dets allierte.</p>
+
+        
+						
+						
+
+												
+												
+												
+												
+												
+					</div>
+				</div>
+
+							</div>
+
+
+
+						
+			
+			
+			
+						
+		</div> 
+				
+	</article>
+  </DIV></DIV>
+</span>
+
+
+
+
+
+
+<span id="article4">
+<div class="panel panel-default">
+  <div class="panel-heading">
+      <h3 class="panel-title"><strong>Internal SAIH plan of action document</strong></h3>
+      Title : Forslag til politisk tema for SAIH 2015 <br/>
+      Author : Inga Marie Nymo Riseth fra informasjonskomiteen <br/>
+      Source : https://saih.no/assets/docs/Vest-Sahara_Politisk_Tema_2015.doc
+        </div>
+	  <div class="panel-body">
+
+		<article>
+
+			<div class="grid">
+<h3>Bakgrunn (Hvorfor fremmer du/dere dette tema, og hvorfor b&oslash;r SAIH jobbe med dette?):</h3>
+I 2015 er det 40 &aring; siden Marokkos okkupasjon av Vest-Sahara startet. F&oslash;r spanske kolonimakter hadde trukket seg ut av Vest-Sahara, rykket marokkanske styrker inn i landet h&oslash;sten 1975.  I 1991 inngikk Marokko og den sarahawiske frigj&oslash;ringsbevegelsen Polisario en v&aring;penhvileavtale. Avtalen innebar at det skulle gjennomf&oslash;res en folkeavstemning i Vest-Sahara i 1992 om landet skulle bli selvstendig eller bli en del av Marokko. For &aring; overv&aring;ke v&aring;penhvilen og sikre gjennomf&oslash;ringen av folkeavstemningen ble FN-operasjonen MINURSO opprettet. Den dag i dag har enn&aring; ikke avstemningen blitt avholdt. MINURSO er FNs eneste operasjon uten mandat til &aring; rapportere om menneskerettighetsbrudd. 
+		</div> 
+
+			<div class="grid">
+Vest-Sahara er meget rikt p&aring; naturressurser, som fisk, olje, gass og fosfat. All &oslash;konomisk aktivitet kontrolleres av Marokko, og omtrent ingenting kommer det sarahawiske folket til gode. I de okkuperte omr&aring;dene er menneskerettighetssituasjonen meget alvorlig, med sterkt begrenset ytringsfrihet, vilk&aring;rlige fengslinger og forsvinninger. Mesteparten av det sarahawiske folket bor i flyktningeleirer ved byen Tindouf i Algerie. Her er ressursmangelen er stor og folk er fullstendig avhengig av humanit&aelig;r hjelp for &aring; overleve. 
+		</div> 
+
+			<div class="grid">
+FN behandler Vest-Sahara som Afrikas siste koloni og over 100 FN-resolusjoner  krever at saharawienes rett til selvbestemmelse m&aring; innfris. Likevel forblir situasjonen fastl&aring;st. En utvidelse av Minursos til &aring; innkludere menneskerettigheter mandat er avgj&oslash;rende for &aring; forbedre situasjonen i Vest-Sahara. Men hvert &aring;r n&aring;r mandatet er oppe til behandling i Sikkerhetsr&aring; et bruker Frankrike, som har n&aelig;re relasjoner til Marokko, sin posisjon til &aring; stoppe en slik inkludering. 
+		</div> 
+
+			<div class="grid">
+Det er mye som tilsier at ved &aring; ha en kampanje p&aring; Vest-Sahara i 2015 kan SAIH f&aring; gjennomslag for sine krav. <a class="cheat cheatb" name="cheat014b" href="#cheat014a" title="cheat014a">Samtlige politiske partier i Norge er enige om at Marokko ikke har et rettmessig krav p&aring; Vest-Sahara, og at sarahawiene har rett til selvbestemmelse. Likevel skjer det ingenting</a>. SAIH kan v&aelig;re den som legger press p&aring; politikerne, og s&oslash;rge for at de har gj&oslash;r uttalelsene sine om til handling. 
+		</div> 
+
+			<div class="grid">
+Regjeringen prioriterer menneskerettigheter i sitt utviklingsbudsjett for 2015, og dette gj&oslash;r Vest-Sahara meget relevant. <a class="cheat cheatb" name="cheat015b" href="#cheat015a" title="cheat015a">I mars 2014 uttalte B&oslash;rge Brende f&oslash;lgende om inkludering av menneskerettigheter: "Norge vil ta opp dette sp&oslash;rsm&aring; et med franske myndigheter, b&aring;de p&aring; hovedstadsniv&aring; og gjennom v&aring;re FN-delegasjoner i Genève og New York</a>."   Det er imidlertid lite som tyder p&aring; at lovnadene er oppfylt. SAIH har n&aring; en mulighet til &aring; spille p&aring; den uttalte politikken, og arbeide for at Norge kan bli initiativtaker i saken. Her er det store sannsynligheter for at vi kan f&aring; st&oslash;tte fra samtlige ungdomspartier. Blant annet vedtok Unge H&oslash;yre p&aring; sitt landsstyrem&oslash;te i september en klar resolusjon som stiller klare krav til handling ovenfor Utenriksdepartementet. 
+		</div> 
+
+			<div class="grid">
+Vest-Sahara-tematikken gir ogs&aring; gode muligheter for handlingsalternativer  i lokallagene.   Vest-Sahara er det eneste landet i verden hvor Norge frar&aring;der norske bedrifter &aring; drive virksomhet. Likevel finnes det flere eksempler p&aring; samarbeid mellom h&oslash;yere utdanningsinstitusjoner i Norge og selskaper (NTNU og UiS samarbeider med oljeselskapet Total) som driver ulovlig virksomhet i Vest-Sahara. Dette samarbeidet skjer gjennom for eksempel karierredager og stipendordninger for studenter, og er slik med p&aring; &aring; legitimere okkupasjonen. Flere av SAIHs lokallag har tidligere jobbet med &aring; f&aring; p&aring; plass etiske retningslinjer ved h&oslash;yere utdanningsinstitusjoner i Norge. 
+		</div> 
+
+			<div class="grid">
+16. oktober er det 40 &aring;  siden den internasjonale straffedomstolen i Haag slo fast at det Sarahawiske folket har rett til selvbestemmelse, og dette "jubileumet" kan utnyttes i en kampanje. Ved &aring; bruke dette jubileumet kan SAIH spille en n&oslash;kkerolle i &aring; sette s&oslash;kelys p&aring; situasjonen, og i &aring; legge press p&aring; norske myndigheter for at de skal holde sine l&oslash;fter om &aring; ta saken opp med Frankrike. 
+		</div> 
+
+			<div class="grid">
+Engasjementet for Vest-Sahara er i SAIH er stort. Siden SAIHs kampanje i 2009, "norske bedrifter ut fra Vest-Sahara", har tematikken blitt foresl&aring; t som politisk tema flere gang. N&aring; er det p&aring; tide at det blir valgt! 
+		</div> 
+		</article>
+  </DIV></DIV>
+</span>
+
